@@ -47,13 +47,16 @@ class TotalModel(BaseModel):
 #######################################
 class ConfirmedModel(BaseModel):
     confirmed: int
-
+    def setConfirmedModel(self,value):
+        self.confirmed = value
 
 #######################################
 # DeathsModel
 #######################################
 class DeathsModel(BaseModel):
     deaths: int
+    def setDeathModel(self,value):
+    self.deaths = value
 
 
 #######################################
@@ -61,6 +64,8 @@ class DeathsModel(BaseModel):
 #######################################
 class RecoveredModel(BaseModel):
     recovered: int
+    def RecoveredModel(self,value):
+    self.recovered = value
 
 
 #######################################
@@ -68,6 +73,8 @@ class RecoveredModel(BaseModel):
 #######################################
 class ActiveModel(BaseModel):
     active: int
+    def ActiveModel(self,value):
+    self.active = value
 
 
 #######################################
