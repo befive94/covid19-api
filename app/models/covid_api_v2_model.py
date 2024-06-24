@@ -19,8 +19,20 @@ class CurrentModel(BaseModel):
     deaths: int
     recovered: int
     active: int
+ 
     
-
+class CurrentModel():
+    location: str
+    confirmed: int
+    deaths: int
+    recovered: int
+    active: int
+    def set(BaseModel):
+    location: str
+    confirmed: int
+    deaths: int
+    recovered: int
+    active: int
 #######################################
 # CurrentUSModel
 #######################################
@@ -45,34 +57,34 @@ class TotalModel(BaseModel):
 #######################################
 # ConfirmedModel
 #######################################
-class ConfirmedModel(BaseModel):
+class ConfirmedModel(BaseModel) extends CurrentModel:
     confirmed: int
-    def setConfirmedModel(self,value):
+    def set(self,value):
     self.confirmed = value
 
 
 #######################################
 # DeathsModel
 #######################################
-class DeathsModel(BaseModel):
+class DeathsModel(BaseModel) extends CurrentModel:
     deaths: int
-    def setDeathsModel(self,value):
+    def set(self,value):
     self.deaths = value
 
 #######################################
 # RecoveredModel
 #######################################
-class RecoveredModel(BaseModel):
+class RecoveredModel(BaseModel) extends CurrentModel:
     recovered: int
-    def setRecoveredModel(self,value):
+    def set(self,value):
     self.recovered = value
 
 #######################################
 # ActiveModel
 #######################################
-class ActiveModel(BaseModel):
+class ActiveModel(BaseModel)extends CurrentModel:
     active: int
-    def setActiveModel(self,value):
+    def set(self,value):
     self.active = value
 
 #######################################
